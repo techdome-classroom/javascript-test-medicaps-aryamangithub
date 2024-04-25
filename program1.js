@@ -8,6 +8,15 @@ function longestSubstring(s) {
         const rightChar = s[windowEnd]
         if(charIndexMap[rightChar]!==undefined) {
             windowStart = Math.max(windowStart, charIndexMap[rightChar]+1)
+        }
+        
+        charIndexMap[rightChar] = windowEnd
+        const subStrLength = windowEnd - windowStart + 1
+        maxLength = Math.max(maxLength, subStrLength)
+    }
+    
+    return maxLength
+}
     }
 }
 
