@@ -4,7 +4,9 @@ function smallestMissingPositiveInteger(nums) {
   while(i < nums.length){
     if(arr[i] > 0 && arr[i] <= arr.length && arr[arr[i] - 1] !== arr[i]) {
       [arr[arr[i] - 1], arr[i]] = [arr[i], arr[arr[i] - 1]]
-      
+    }
+    else {
+      i++
     }
   }
 }
