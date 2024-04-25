@@ -5,7 +5,7 @@ function longestSubstring(s) {
     let windowStart = 0
 
     for(let windowEnd = 0; windowEnd < s.length; windowEnd++) {
-        const rightChar = s[window]
+        const rightChar = s[windowStart]
     }
 }
 
