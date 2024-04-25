@@ -7,6 +7,7 @@ function longestSubstring(s) {
     for(let windowEnd = 0; windowEnd < s.length; windowEnd++) {
         const rightChar = s[windowEnd]
         if(charIndexMap[rightChar]!==undefined) {
+            windowStart = Math.max(windowStart, charIndexMap[rightChar]+1)
     }
 }
 
