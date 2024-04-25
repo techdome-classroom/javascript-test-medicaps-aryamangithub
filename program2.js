@@ -3,7 +3,7 @@ function smallestMissingPositiveInteger(nums) {
   let i=0
   while(i < nums.length){
     if(nums[i] > 0 && nums[i] <= nums.length && nums[nums[i] - 1] !== nums[i]) {
-      [arr[arr[i] - 1], arr[i]] = [arr[i], arr[arr[i] - 1]]
+      [arr[arr[i] - 1], arr[i]] = [arr[i], nums[nums[i] - 1]]
     }
     else {
       i++
