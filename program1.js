@@ -1,6 +1,7 @@
 function longestSubstring(s) {
     // Implementation of longestSubstring function
-    const charIndexMap
+    const charIndexMap = {}
+    
 }
 
 module.exports = { longestSubstring };
